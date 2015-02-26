@@ -1,0 +1,774 @@
+/******************************
+***********NOTES***************
+*******************************
+
+
+font-family: Avenir Next;
+background grey: #282B2A;
+teal: #00A297;
+gold: #FEDC10;
+pink: #EC008B;
+
+*/
+
+
+
+
+
+
+
+
+
+
+/******************************
+***********GLOBAL**************
+******************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Avenir Next", "Helvetica" "sans-serif";
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	width: 100%;
+	background-color: black;
+	color: #FEDC10;
+	font-weight: 100;
+	margin: 0;
+	padding: 2%;
+	border: 0;
+}
+
+h1.welcomeStatement {
+	width: 100%;
+	margin: 0 auto;
+	font-weight: 100;
+	font-size: 3rem;
+	text-align: center;
+	position: relative;
+	top: 650px;
+}
+
+input:focus, textarea:focus, button:focus {
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************
+*********Wolves**************
+****************************/
+
+.wolfAnimation{
+	height: 2200px;
+}
+
+	#scrollAlert {
+		width: 100%;
+		font-size: 5em;
+		text-align: center;
+		position: relative;
+		top: 200px;
+	}
+
+	#wolf-pink {
+		z-index: 6;
+		opacity: 0;
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		left:80px;
+		top:18px;
+		background-image: url("../images/realjoetWolfPink.png");
+		background-size: 95%;
+	}
+
+	#wolf-teal {
+		z-index: 1;
+		opacity: 0;
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		left:95px;
+		top:0px;
+		background-image: url("../images/realjoetWolfTeal.png");
+		background-size: 95%;
+	}
+
+	#wolf-yellow {
+		z-index: 11;
+		opacity: 0;
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		left:105px;
+		top:13px;
+		background-image: url("../images/realjoetWolfYellow.png");
+		background-size: 95%;
+	}
+
+	#wolfEyes {
+		z-index: 3;
+		opacity: 0;
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		left:96px;
+		top:10px;
+		background-image: url("../images/realjoetWolfEyes.png");
+		background-size: 95%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+***WORK SECTION************
+**************************/
+
+section.work {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	position: relative;
+	top: 650px;
+	margin: 5% 0;
+}
+
+	.yellow {
+		border: solid 2px #FEDC10;
+		margin: .1rem 0;
+		width: 49.5%;
+		height: 300px;
+	}
+
+	.pink {
+		border: solid 2px #EC008B;
+		margin: .1rem 0;
+		width: 49.5%;
+		height: 300px;
+	}
+
+	.teal {
+		border: solid 2px #00A297;
+		margin: .1rem 0;
+		width: 49.5%;
+		height: 300px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+***CONTACT SECTION*********
+**************************/
+
+section.contact {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	position: relative;
+	top: 650px;
+	margin: 5% 0;
+}
+
+	.map-area {
+		width: 49.5%;
+		display: none;
+	}
+		.map {
+			width: 100%;
+			height: 550px;
+			z-index: 2;
+			background: url('../images/googleBDW.png');
+		}
+
+		.map-overlay {
+			width: 100%;
+			height: 550px;
+			background-color: #00A297;
+			opacity: .6;
+			z-index: 10;
+			position: relative;
+			top: 0;
+		}
+
+	form.contact-area {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-self: flex-start;
+	}
+
+		.contact-area__header {
+			width: 100%;
+			font-size: 4rem;
+			font-weight: 100;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+
+		.personal-info {
+			font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+			width: 100%;
+			border: 1px solid #00A297;
+			background-color: black;
+			color: #00A297; 
+			padding: 2%;
+			margin: 2% 0;
+			font-size: 1.5rem;
+		}
+
+		.personal-info:focus {
+			border: 1px solid black;
+			background-color: #00A297;
+			color: black; 
+			font-weight: 400;
+		}
+
+		.personal-info::-webkit-input-placeholder {
+			font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #00A297;
+		}
+
+		.personal-info:-moz-placeholder {
+		   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #00A297;
+		}
+
+		.personal-info::-moz-placeholder {
+		   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #00A297; 
+		}
+
+		.personal-info:-ms-input-placeholder {  
+		   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #00A297; 
+		}
+
+		.contact-area__message-input {
+			font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+			width: 100%;
+			height: 200px;
+			border: 1px solid #EC008B;
+			color: #EC008B;
+			background-color: black;
+			padding: 2%;
+			margin: 2% 0;
+			font-size: 1.5rem;
+		}
+
+		.contact-area__message-input:focus {
+			border: 1px solid black;
+			color: black;
+			background-color: #EC008B;
+			font-weight: 400;
+		}
+
+		.contact-area__message-input::-webkit-input-placeholder {
+		   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #EC008B;;
+		}
+
+		.contact-area__message-input:-moz-placeholder { 
+		   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #EC008B;;
+		}
+
+		.contact-area__message-input::-moz-placeholder {
+		   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #EC008B;;
+		}
+
+		.contact-area__message-input:-ms-input-placeholder {  
+		   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+			font-weight: 200;
+		   	color: #EC008B;;
+		}
+
+		.contact-area__send-button {
+			font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+			width: 100%;
+			border: 1px solid #FEDC10;
+			background-color: black;
+			color: #FEDC10;
+			font-size: 1.5rem;
+			font-weight: 200;
+			padding: 1%;
+			margin: 2% 0;
+			text-align: center;
+		}
+
+		.contact-area__send-button:hover, .contact-area__send-button:focus {
+			border: 1px solid black;
+			background-color: #FEDC10;
+			color: black;
+			font-weight: 400;
+			cursor: pointer;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+*******MEDIA QUERIES***********
+******************************/
+
+
+
+@media (min-width: 750px) {
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1020px) {
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1250px) {
+
+	/******************************
+	***********GLOBAL**************
+	******************************/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body{
+		width: 100%;
+		max-width: 1300px;
+		background-color: black;
+		color: #FEDC10;
+		font-weight: 100;
+		margin: 0;
+		padding: 2%;
+		border: 0;
+	}
+
+	h1.welcomeStatement {
+		width: 100%;
+		margin: 0 auto;
+		font-weight: 100;
+		font-size: 8rem;
+		text-align: center;
+		position: relative;
+		top: 650px;
+	}
+
+	input:focus, textarea:focus, button:focus {
+		outline: none;
+	}
+
+	textarea {
+		resize: none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/****************************
+	*********Wolves**************
+	****************************/
+
+	.wolfAnimation{
+		height: 2400px;
+	}
+
+		#scrollAlert {
+			width: 100%;
+			font-size: 10em;
+			text-align: center;
+			position: relative;
+			top: 200px;
+		}
+
+		#wolf-pink {
+			z-index: 6;
+			opacity: 0;
+			width: 600px;
+			height: 600px;
+			position: fixed;
+			left:300px;
+			top:35px;
+			background-image: url("../images/realjoetWolfPink.png");
+		}
+
+		#wolf-teal {
+			z-index: 1;
+			opacity: 0;
+			width: 600px;
+			height: 600px;
+			position: fixed;
+			left:330px;
+			top:0px;
+			background-image: url("../images/realjoetWolfTeal.png");
+		}
+
+		#wolf-yellow {
+			z-index: 11;
+			opacity: 0;
+			width: 600px;
+			height: 600px;
+			position: fixed;
+			left:350px;
+			top:25px;
+			background-image: url("../images/realjoetWolfYellow.png");
+		}
+
+		#wolfEyes {
+			z-index: 3;
+			opacity: 0;
+			width: 600px;
+			height: 600px;
+			position: fixed;
+			left:332px;
+			top:20px;
+			background-image: url("../images/realjoetWolfEyes.png");
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/**************************
+	***WORK SECTION************
+	**************************/
+
+	section.work {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		position: relative;
+		top: 650px;
+		margin: 5% 0;
+	}
+
+		.yellow {
+			border: solid 2px #FEDC10;
+			margin: .1rem 0;
+			width: 24.5%;
+			height: 300px;
+		}
+
+		.pink {
+			border: solid 2px #EC008B;
+			margin: .1rem 0;
+			width: 24.5%;
+			height: 300px;
+		}
+
+		.teal {
+			border: solid 2px #00A297;
+			margin: .1rem 0;
+			width: 24.5%;
+			height: 300px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/**************************
+	***CONTACT SECTION*********
+	**************************/
+
+	section.contact {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		position: relative;
+		top: 650px;
+		margin: 5% 0;
+	}
+
+		.map-area {
+			width: 49.5%;
+			display: initial;
+		}
+			.map {
+				width: 100%;
+				height: 550px;
+				z-index: 2;
+				background: url('../images/googleBDW.png');
+			}
+
+			.map-overlay {
+				width: 100%;
+				height: 550px;
+				background-color: #00A297;
+				opacity: .6;
+				z-index: 10;
+				position: relative;
+				top: 0;
+			}
+
+		form.contact-area {
+			width: 49.5%;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			align-self: flex-start;
+		}
+
+			.contact-area__header {
+				width: 95%;
+				font-size: 4.2rem;
+				font-weight: 100;
+				padding: 0;
+				margin: 1% 0 0 5%;
+			}
+
+			.personal-info {
+				font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+				width: 80%;
+				border: 1px solid #00A297;
+				background-color: black;
+				color: #00A297; 
+				padding: 2%;
+				margin: 1% 0 1% 15%;
+				font-size: 1.5rem;
+			}
+
+			.personal-info:focus {
+				border: 1px solid black;
+				background-color: #00A297;
+				color: black; 
+				font-weight: 400;
+			}
+
+			.personal-info::-webkit-input-placeholder {
+				font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #00A297;
+			}
+
+			.personal-info:-moz-placeholder {
+			   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #00A297;
+			}
+
+			.personal-info::-moz-placeholder {
+			   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #00A297; 
+			}
+
+			.personal-info:-ms-input-placeholder {  
+			   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #00A297; 
+			}
+
+			.contact-area__message-input {
+				font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+				width: 80%;
+				height: 200px;
+				border: 1px solid #EC008B;
+				color: #EC008B;
+				background-color: black;
+				padding: 2%;
+				margin: 1% 0 1% 15%;
+				font-size: 1.5rem;
+			}
+
+			.contact-area__message-input:focus {
+				border: 1px solid black;
+				color: black;
+				background-color: #EC008B;
+				font-weight: 400;
+			}
+
+			.contact-area__message-input::-webkit-input-placeholder {
+			   font-family: "Avenir Next", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #EC008B;;
+			}
+
+			.contact-area__message-input:-moz-placeholder { 
+			   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #EC008B;;
+			}
+
+			.contact-area__message-input::-moz-placeholder {
+			   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #EC008B;;
+			}
+
+			.contact-area__message-input:-ms-input-placeholder {  
+			   font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+				font-weight: 200;
+			   	color: #EC008B;;
+			}
+
+			.contact-area__send-button {
+				font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+				width: 20%;
+				border: 1px solid #FEDC10;
+				background-color: black;
+				color: #FEDC10;
+				font-size: 1.5rem;
+				font-weight: 200;
+				padding: 1%;
+				margin: 1% 0 1% 75%;
+				text-align: center;
+			}
+
+			.contact-area__send-button:hover, .contact-area__send-button:focus {
+				border: 1px solid black;
+				background-color: #FEDC10;
+				color: black;
+				font-weight: 400;
+				cursor: pointer;
+			}
+
+
+
+		
+}
+		   	

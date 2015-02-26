@@ -1,0 +1,173 @@
+{
+	"devWork": {
+		"circleOfBite": [
+			{
+			"title": "Circle of Bite",
+			"description": "Circle of Bite is a visual food diary turned social media network created to inspire a global conversation about our eating habits in order to destigmatize the task of eating healthy and inspire a change in eating habits across the globe.",
+			"mainPic":,
+			"pics":,
+			"info": [
+				{
+				"client": "Earth",
+				"employer": "Humanity",
+				"team": "Me, myself and I",
+				"role": "Creator"
+				}],
+			},
+		],
+		"parallaxBoxingMasters": [
+			{
+			"title": "",
+			"description": "",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": ""
+				}],
+			},
+		],
+		"rtdBeacon": [
+			{
+			"title": "RTD Beacon",
+			"description": "Created in order to improve the public transit system",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "Catie Czajkowski, Erin Rhodes, Joe Toscano",
+				"role": "Designer, Developer"
+				}],
+			},
+		],
+	},
+
+	"designWork": {
+		"unlDining": [
+			{
+			"title": "UNL Dining Healthy Eating Campaign",
+			"description": "Tasked with making eating healthy at the UNL Dining Halls a favorable choice, we created a campaign that we thought would bring life to eating healthy. Instead of telling kids to eat healthy because it's cool, popular or flat out good for you, we decided to take the stance that eating healthy makes you super-human.",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "UNL Dining",
+				"employer": "Jacht Ad Lab",
+				"team": 
+					{
+					"Account Executive":"Kaylee Dump",
+					"Account Planner": "Jess Peterson",
+					"Creative Insights": "Joe Toscano",
+					"Creative": "Miles Ukuoma"
+					},
+				"role": "Creative insights, Creative direction"
+				}],
+			},
+		],
+		"executiveTravel": [
+			{
+			"title": "Executive Travel Rebrand",
+			"description": "Executive Travel was Inc. 500's fastest growing travel management corporation in America three years running, but they were bored with their brand. Our job was to make take Executive Travel into the 21st century.",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "Executive Travel",
+				"employer": "Jacht Ad Lab",
+				"team": 
+					{
+					"Account Executive": "Kaylee Dump",
+					"Account Planner": "Emily Rust",
+					"Creative Insights": "Joe Toscano",
+					"Creative Lead": "Jim Wardian",
+					"Design": "Katie Black",
+					},
+				"role": "Creative Insights, Creative Direction"
+				}],
+			},
+		],
+		"tigerArt": [
+			{
+			"title": "Vicious Felines",
+			"description": "Some art I made in my free time. I will have a pet tiger someday.",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": "",
+				}],
+			},
+		],
+		"blackAndWhiteArt": [
+			{
+			"title": "Black & White Art",
+			"description": "",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": "",
+				}],
+			},
+		],
+	},
+
+	"experiments": {
+		"leapMotionRubensTube": [
+			{
+			"title": "Interactive Ruben's Tube",
+			"description": "A project I made for Creative Tech while attending BDW. I ran propane through electrical tubing with a speaker sealing off the other end. When music is run against the propane flow, the soundwaves alter the height of the fire. I then connected a Leap Motion, which allowed you to control the fire with your hands by altering the sound.",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": "",
+				}],
+			},
+		],
+		"externalTendons": [
+			{
+			"title": "External Tendons",
+			"description": "I severly sprained my ankle but instead of getting a wrap, I decided to make my own external tendons with my knowledge of human physiology and kinesthetics",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": "",
+				}],
+			},
+		],	
+		"jpapers": [
+			{
+			"title": "JPapers",
+			"description": "Personal blog",
+			"mainPic": "",
+			"pics": "",
+			"info": [
+				{
+				"client": "",
+				"employer": "",
+				"team": "",
+				"role": "",
+				}],
+			},
+		],	
+	}
+}

@@ -1,0 +1,943 @@
+/******************************
+***********NOTES***************
+*******************************
+
+
+font-family: Avenir Next;
+background grey: #282B2A;
+teal: #00A297;
+gold: #FEDC10;
+pink: #EC008B;
+
+*/
+
+
+
+
+
+
+
+
+
+
+/******************************
+***********GLOBAL**************
+******************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "OCR A std", "courier", "sans-serif";
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	width: 100%;
+	max-width: 560px;
+	background-color: black;
+	margin: 0;
+	padding: 2%;
+	border: 0;
+}
+
+section {
+	width: 100%;
+	margin: 0 auto 5%;
+}
+
+a.link {
+	color: #00A297;
+	background-color: #EC008B;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0 0 1%;
+}
+
+span.teal {
+	color: #00A297;
+}
+
+span.gold {
+	color: #FEDC10;
+}
+
+span.pink {
+	color: #EC008B;
+}
+
+.run-code-button {
+	width: 25%;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+	background-color: #EC008B;
+	padding: 1%;
+	border: 2px solid #EC008B;
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	bottom: 30px;
+	z-index: 10;
+}
+
+
+
+
+
+
+
+
+/******************************
+***********ABOUT***************
+******************************/
+
+div.about__info {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+	span.prototype {
+		margin: 0 0 0 10%;
+	}
+
+
+	p.about__key-name {
+		width: 90%;
+		order: 1;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.about__value-name {
+		width: 80%;
+		order: 2;
+		margin: 1% 0 1% 10%;
+		color: #00A297;
+	}
+
+	p.about__key-bio {
+		width: 90%;
+		order: 3;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.about__value-bio {
+		width: 80%;
+		order: 4;
+		margin: 1% 0 1% 10%;
+		color: #00A297;
+	}
+
+	p.about__key-what-im-looking-for {
+		width: 90%;
+		order: 5;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.about__value-what-im-looking-for {
+		width: 80%;
+		order: 6;
+		margin: 1% 0 1% 10%;
+		color: #00A297;
+	}
+
+	p.about__key-long-term-goal {
+		width: 90%;
+		order: 7;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.about__value-long-term-goal {
+		width: 80%;
+		order: 8;
+		margin: 1% 0 1% 10%;
+		color: #00A297;
+	}
+
+	p.about__key-motto {
+		width: 90%;
+		order: 9;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.about__value-motto {
+		width: 80%;
+		order: 10;
+		margin: 1% 0 1% 10%;
+		color: #00A297;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+************WORK***************
+******************************/
+
+div.work__links {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+
+	p.work__key-design {
+		width: 9%;
+		order: 1;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.work__value-design {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 2;
+		color: #00A297;
+	}
+
+	p.work__key-development {
+		width: 14%;
+		order: 3;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.work__value-development {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 4;
+		color: #00A297;
+	}
+
+	p.work__key-experiments {
+		width: 14%;
+		margin: 1% 0 1% 10%;
+		order: 5;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.work__value-experiments {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 6;
+		color: #00A297;
+	}
+
+	p.work__key-references {
+		width: 13%;
+		order: 7;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.work__value-references {
+		width: 70%;
+		margin: 1% 0 1% 10%;
+		order: 8;
+		color: #00A297;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+***********CONTACT**************
+******************************/
+
+
+
+div.contact__info {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+
+	p.contact__key-email {
+		width: 9%;
+		order: 1;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.contact__value-email {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 2;
+		color: #00A297;
+	}
+
+	p.contact__key-phone {
+		width: 14%;
+		order: 3;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.contact__value-phone {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 4;
+		color: #00A297;
+	}
+
+	p.contact__key-twitter {
+		width: 11%;
+		order: 5;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.contact__value-twitter {
+		width: 80%;
+		margin: 1% 0 1% 10%;
+		order: 6;
+		color: #00A297;
+	}
+
+	p.contact__key-blog {
+		width: 40%;
+		order: 7;
+		margin: 1% 0 1% 3%;
+		color: #FEDC10;
+	}
+
+	p.contact__value-blog {
+		width: 70%;
+		margin: 1% 0 1% 10%;
+		order: 8;
+		color: #00A297;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+*******MEDIA QUERIES***********
+******************************/
+
+
+
+@media (min-width: 750px) {
+
+	/******************************
+	***********GLOBAL**************
+	******************************/
+
+	body{
+		width: 100%;
+		max-width: 1020px;
+	}
+
+	.run-code-button {
+		width: 21%;
+	}
+
+
+
+
+
+
+
+	/******************************
+	***********ABOUT***************
+	******************************/
+
+	span.prototype {
+		margin: 0;
+	}
+
+
+	p.about__key-name {
+		width: 15%;
+	}
+
+	p.about__value-name {
+		width: 75%;
+		margin: 0;
+	}
+
+	p.about__key-bio {
+		width: 14%;
+	}
+
+	p.about__value-bio {
+		width: 80%;
+		margin: 0;
+	}
+
+	p.about__key-what-im-looking-for {
+		width: 33.5%;
+	}
+
+	p.about__value-what-im-looking-for {
+		width: 60%;
+		margin: 0;
+	}
+
+	p.about__key-long-term-goal {
+		width: 27.5%;
+	}
+
+	p.about__value-long-term-goal {
+		width: 65%;
+		margin: 0;
+	}
+
+	p.about__key-motto {
+		width: 17%;
+	}
+
+	p.about__value-motto {
+		width: 75%;
+		margin: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	************WORK***************
+	******************************/
+
+
+	p.work__key-design {
+		width: 13.5%;
+	}
+
+	p.work__value-design {
+		width: 80%;
+		margin: 0;
+	}
+
+	p.work__key-development {
+		width: 21%;
+	}
+
+	p.work__value-development {
+		width: 75%;
+		margin: 0;
+	}
+
+	p.work__key-experiments {
+		width: 21%;
+	}
+
+	p.work__value-experiments {
+		width: 75%;
+		margin: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	***********CONTACT**************
+	******************************/
+
+
+
+	p.contact__key-email {
+		width: 13%;
+	}
+
+	p.contact__value-email {
+		width: 80%;
+		margin: 0;
+	}
+
+	p.contact__key-phone {
+		width: 22%;
+	}
+
+	p.contact__value-phone {
+		width: 75%;
+		margin: 0;
+	}
+
+	p.contact__key-twitter {
+		width: 16%;
+	}
+
+	p.contact__value-twitter {
+		width: 80%;
+		margin: 0;
+	}
+
+	p.contact__key-blog {
+		width: 15%;
+	}
+
+	p.contact__value-blog {
+		width: 70%;
+		margin: 0;
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1020px) {
+
+	/******************************
+	***********GLOBAL**************
+	******************************/
+
+	body{
+		max-width: 1270px;
+	}
+
+	.run-code-button {
+		width: 21%;
+		color: #EC008B;;
+		background-color: black;
+	}
+
+	.run-code-button:hover {
+		color: black;
+		background-color: #EC008B;
+		cursor: pointer;
+	}
+
+
+
+
+
+
+
+	/******************************
+	***********ABOUT***************
+	******************************/
+
+	p.about__key-name {
+		width: 12%;
+	}
+
+	p.about__value-name {
+		width: 75%;
+	}
+
+	p.about__key-bio {
+		width: 11%;
+	}
+
+	p.about__value-bio {
+		width: 85%;
+	}
+
+	p.about__key-what-im-looking-for {
+		width: 25%;
+	}
+
+	p.about__value-what-im-looking-for {
+		width: 65%;
+	}
+
+	p.about__key-long-term-goal {
+		width: 21%;
+	}
+
+	p.about__value-long-term-goal {
+		width: 70%;
+	}
+
+	p.about__key-motto {
+		width: 13%;
+	}
+
+	p.about__value-motto {
+		width: 80%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	************WORK***************
+	******************************/
+
+	p.work__key-design {
+		width: 9.5%;
+	}
+
+	p.work__value-design {
+		width: 80%;
+	}
+
+	p.work__key-development {
+		width: 15.5%;
+	}
+
+	p.work__value-development {
+		width: 80%;
+	}
+
+	p.work__key-experiments {
+		width: 15.5%;
+	}
+
+	p.work__value-experiments {
+		width: 80%;
+	}
+
+	p.work__key-references {
+		width: 14.5%;
+	}
+
+	p.work__value-references {
+		width: 70%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	***********CONTACT**************
+	******************************/
+
+
+	p.contact__key-email {
+		width: 9%;
+	}
+
+	p.contact__value-email {
+		width: 80%;
+	}
+
+	p.contact__key-phone {
+		width: 14%;
+	}
+
+	p.contact__value-phone {
+		width: 80%;
+	}
+
+	p.contact__key-twitter {
+		width: 11%;
+	}
+
+	p.contact__value-twitter {
+		width: 80%;
+	}
+
+	p.contact__key-blog {
+		width: 10%;
+	}
+
+	p.contact__value-blog {
+		width: 70%;
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1250px) {
+
+
+
+	/******************************
+	***********GLOBAL**************
+	******************************/
+
+	body{
+		max-width: 1400px;
+	}
+
+	.run-code-button {
+		width: 20%;
+	}
+
+
+
+
+
+
+
+
+	/******************************
+	***********ABOUT***************
+	******************************/
+
+	p.about__key-name {
+		width: 12%;
+	}
+
+	p.about__value-name {
+		width: 80%;
+	}
+
+	p.about__key-bio {
+		width: 11%;
+	}
+
+	p.about__value-bio {
+		width: 85%;
+	}
+
+	p.about__key-what-im-looking-for {
+		width: 24.5%;
+	}
+
+	p.about__value-what-im-looking-for {
+		width: 65%;
+	}
+
+	p.about__key-long-term-goal {
+		width: 20%;
+	}
+
+	p.about__value-long-term-goal {
+		width: 70%;
+	}
+
+	p.about__key-motto {
+		width: 12%;
+	}
+
+	p.about__value-motto {
+		width: 80%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	************WORK***************
+	******************************/
+	p.work__key-design {
+		width: 9%;
+	}
+
+	p.work__value-design {
+		width: 80%;
+	}
+
+	p.work__key-development {
+		width: 14%;
+	}
+
+	p.work__value-development {
+		width: 80%;
+	}
+
+	p.work__key-experiments {
+		width: 14%;
+	}
+
+	p.work__value-experiments {
+		width: 80%;
+	}
+
+	p.work__key-references {
+		width: 13%;
+	}
+
+	p.work__value-references {
+		width: 70%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/******************************
+	***********CONTACT**************
+	******************************/
+
+
+
+	p.contact__key-email {
+		width: 9%;
+	}
+
+	p.contact__value-email {
+		width: 80%;
+	}
+
+	p.contact__key-phone {
+		width: 14%;
+	}
+
+	p.contact__value-phone {
+		width: 80%;
+	}
+
+	p.contact__key-twitter {
+		width: 11%;
+	}
+
+	p.contact__value-twitter {
+		width: 80%;
+	}
+
+	p.contact__key-blog {
+		width: 10%;
+	}
+
+	p.contact__value-blog {
+		width: 70%;
+	}
+	
+}

@@ -1,0 +1,277 @@
+/******************************
+***********NOTES***************
+******************************/
+
+
+$font: "Avenir Next Condensed", "Avenir Next", "Helvetica" "sans-serif";
+$background-grey: #282B2A;
+$teal: #00A297;
+$gold: #FEDC10;
+$pink: #EC008B;
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+***********GLOBAL**************
+******************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: $font;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	width: 100%;
+	background-color: black;
+	color: $gold;
+	font-weight: 100;
+	margin: 0;
+	padding: 2%;
+	border: 0;
+}
+
+h1.welcomeStatement {
+	width: 100%;
+	margin: 0 auto;
+	font-weight: 100;
+	font-size: 10rem;
+	text-align: center;
+	position: relative;
+	top: 650px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************
+*********Wolves**************
+****************************/
+
+.wolfAnimation{
+	height: 2000px;
+}
+
+	#scrollAlert {
+		width: 100%;
+		font-size: 10em;
+		text-align: center;
+		position: relative;
+		top: 200px;
+	}
+
+	#wolf-pink {
+		z-index: 6;
+		width: 600px;
+		height: 600px;
+		position: fixed;
+		left:300px;
+		top:35px;
+		background-image: url("../images/realjoetWolfPink.png");
+	}
+
+	#wolf-teal {
+		z-index: 1;
+		width: 600px;
+		height: 600px;
+		position: fixed;
+		left:330px;
+		top:0px;
+		background-image: url("../images/realjoetWolfTeal.png");
+	}
+
+	#wolf-yellow {
+		z-index: 11;
+		width: 600px;
+		height: 600px;
+		position: fixed;
+		left:350px;
+		top:25px;
+		background-image: url("../images/realjoetWolfYellow.png");
+	}
+
+	#wolfEyes {
+		z-index: 3;
+		width: 600px;
+		height: 600px;
+		position: fixed;
+		left:332px;
+		top:20px;
+		background-image: url("../images/realjoetWolfEyes.png");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+***WORK SECTION************
+**************************/
+
+section.work {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	position: relative;
+	top: 650px;
+	margin: 5% 0;
+}
+
+	.yellow {
+		border: solid 2px $gold;
+		margin: .1rem 0;
+		width: 24.5%;
+		height: 300px;
+	}
+
+	.pink {
+		border: solid 2px $pink;
+		margin: .1rem 0;
+		width: 24.5%;
+		height: 300px;
+	}
+
+	.teal {
+		border: solid 2px $teal;
+		margin: .1rem 0;
+		width: 24.5%;
+		height: 300px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+***CONTACT SECTION*********
+**************************/
+
+section.contact {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	position: relative;
+	top: 650px;
+	margin: 5% 0;
+}
+
+	.map-area {
+		width: 49.5%;
+	}
+		.map {
+
+		}
+
+		.map-overlay {
+			width: 100%;
+			height: 550px;
+			background-color: $teal;
+			opacity: .7;
+		}
+
+	.contact-area {
+		width: 49.5%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+	}
+
+		.contact-area__header {
+			width: 95%;
+			font-size: 6rem;
+			margin: 1% 0 1% 5%;
+		}
+
+		.contact-area__name-input {
+			width: 80%;
+			border: 1px solid $teal;
+			color: #00A297;
+			background-color: black;
+			padding: 2%;
+			margin: 1% 0 1% 15%;
+			font-size: 1.5rem;
+		}
+
+		.contact-area__email-input {
+			width: 80%;
+			border: 1px solid $teal;
+			color: #00A297;
+			background-color: black;
+			padding: 2%;
+			margin: 1% 0 1% 15%;
+			font-size: 1.5rem;
+		}
+
+		.contact-area__message-input {
+			width: 80%;
+			height: 200px;
+			border: 1px solid $pink;
+			color: #EC008B;
+			background-color: black;
+			padding: 2%;
+			margin: 1% 0 1% 15%;
+			font-size: 1.5rem;
+		}
+
+		.contact-area__send-button {
+			width: 20%;
+			border: 1px solid $gold;
+			color: $gold;
+			font-size: 1.5rem;
+			padding: 1%;
+			margin: 1% 0 1% 75%;
+			text-align: center;
+		}
+
+		.contact-area__send-button:hover {
+			border: 1px solid black;
+			background-color: $gold;
+			color: black;
+			font-size: 600;
+			cursor: pointer;
+		}
