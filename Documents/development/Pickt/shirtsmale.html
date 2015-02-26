@@ -1,0 +1,59 @@
+<!DOCTYPE = html>
+
+<html>
+<head>
+	<title>Pick't</title>
+	<link type='text/css' rel='stylesheet' href='css/pickt.css'>
+
+	<link type='text/css' rel='stylesheet' href='css/slick.css'>
+
+</head>
+
+<body>
+	<div class='container'>
+
+		<div class = 'col-100 content-title'>
+			<a href='index.html'><img class = 'content-banner' src = 'images/picktheader.jpg' alt = 'Pickt header'></a>
+		</div>
+
+
+		<div class='content'>
+			<div class='carousel'>
+				<div class='carousel-item'>
+					<div class='content-item'></div>
+					<div class='content-price'></div>
+				</div>
+
+				<div class= 'carousel-item'>
+					<div class='content-item'></div>
+					<div class='content-price'></div>
+				</div>
+			</div> <!--End Carousel-->
+		</div>
+	</div> <!--Ends Container-->
+
+
+	<!--Begin Javascript-->
+	  <script type='text/javascript' src="js/jquery-2.1.1.min.js"></script>
+	  <script type='text/javascript' src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script type='text/javascript' src="js/plugins.js"></script>
+      <script type='text/javascript' src="js/pickt-detail.js"></script>
+      <script type='text/javascript' src="js/slick.min.js"></script> <!--slick carousel-->
+
+
+	<!--Slick carousel script-->
+	<script>
+		var carousel = $('.carousel');
+
+		carousel.slick({
+			adaptiveHeight: true,
+			autoplaySpeed: 0,
+			swipeToSlide: true,
+		});
+	</script>
+
+	<!--Ends Javascript-->
+
+
+</body>
+</html>

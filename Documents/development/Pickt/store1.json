@@ -1,0 +1,158 @@
+{
+    "store": {
+        "location": {
+            "storeName": "Volcom",
+            "street": "1223 Pearl St",
+            "city": "Boulder",
+            "state": "Colorado",
+            "zip": "80302",
+            "country": "United States",
+            "latitude": "",
+            "longitute": ""
+        },
+        "mens": {
+            "shirts": [
+                {
+                    "item": "images/mens/shirts/TTTMillardNiteDudeArtistTee.jpg",
+                    "price": "22.00"
+                },
+                {
+                    "item": "images/mens/shirts/instaCatTee.jpg",
+                    "price": "22.00"
+                },
+                {
+                    "item": "images/mens/shirts/instaWizzardTee.jpg",
+                    "price": "22.00"
+                },
+                {
+                    "item": "images/mens/shirts/iHopeImWrongTee.jpg",
+                    "price": "22.00"
+                },
+                {
+                    "item": "images/mens/shirts/esEffTee.jpg",
+                    "price": "22.00"
+                },
+                {
+                    "item": "images/mens/shirts/stoneScienceTee.jpg",
+                    "price": "22.00"
+                }
+            ],
+            "long-sleeve": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "outerwear": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "shorts": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "pants": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "tanks": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "underwear": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "shoes": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "accessories": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ]
+        },
+        "womens": {
+            "shirts": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "long-sleeve": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "outerwear": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "dresses": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "skirts": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "shorts": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "pants": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "tanks": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "underwear": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "shoes": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ],
+            "accessories": [
+                {
+                    "item": " ",
+                    "price": " "
+                }
+            ]
+        }
+    }
+}
