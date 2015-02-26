@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML5 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="description" content="Mindfule is a visual food diary created to start a global conversation about what's in our food and educate the world about how we can improve eating habits around the world." />
+
+<meta name="keywords" content="mindfulness, eating habits, fitness, health, wellness, diet, weight loss, lose weight, mindful eating revolution, mindfule, mindful, eating, revolution, myplate, education, obesity crisis" />
+
+<title>Track Mindfule | Mindful Eating Revolution</title>
+
+<link type="text/css" rel="stylesheet" href="css/mindfulemealtrack.css" />
+
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49224723-1', 'mindfuleatingrevolution.com');
+  ga('send', 'pageview');
+
+</script>
+
+<!--Take Notes-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+		
+		$('#takenotes').click(function(){
+			$('.macromenu').slideToggle('slow');
+		});
+		
+		$('#takenotes').click(function(){
+			$('#notes').slideToggle('slow');
+		});
+	
+		
+	});
+    </script>
+
+<!--End Take Notes-->
+
+
+<!--Solid/Liquid disappear-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+		
+		$(function(){
+    		$("#canvas").hover(function(){
+      			$("#solid").hide();
+    			},
+          function(){
+            $("#solid").show();
+           }
+                   );        
+		});
+		
+		$(function(){
+    		$("#canvas2").hover(function(){
+      			$("#liquid").hide();
+    			},
+          function(){
+            $("#liquid").show();
+           }
+                   );        
+		});
+	
+		
+	});
+    </script>
+
+
+<!--KineticJS wedge objects-->
+	<script type="text/javascript" src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+    <script defer="defer">
+      var stage = new Kinetic.Stage({
+        container: '#canvas',
+        width: 300,
+        height: 300
+      });
+
+      var layer = new Kinetic.Layer();
+
+      var wedge = new Kinetic.Wedge({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        radius: 150,
+        angle: 150, //should change according to mouse click and drag
+        fill: color_select,
+        rotation: 0 //should start where last color ended
+      });
+
+      // add the shape to the layer
+      layer.add(wedge);
+
+      // add the layer to the stage
+      stage.add(layer);
+    </script>
+    
+<!--End of KineticJS script-->
+
+
+<!--Interactive Plates-->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"> </script>
+
+<script>
+
+//Universal plate variables	
+	var color_select = "white";
+
+//Solid plate //Pick color
+$(function(){	
+	$(".macromenu").children("div").click(function(){
+		//console.log($(this));	
+		if($(this).hasClass("blue"))
+			color_select = "blue";
+		else if($(this).hasClass("red"))
+			color_select = "red";
+		else if($(this).hasClass("green"))
+			color_select = "green";
+		else if($(this).hasClass("purple"))
+			color_select = "#60C";
+		else if($(this).hasClass("orange"))
+			color_select = "#F60";
+		else if($(this).hasClass("black"))
+			color_select = "black";
+	});
+	
+
+
+
+//Fill function
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+    ctx.fillStyle=color_select;
+	
+
+    var $canvas=$("#canvas");
+    var canvasOffset=$canvas.offset();
+    var offsetX=canvasOffset.left;
+    var offsetY=canvasOffset.top;
+    var scrollX=$canvas.scrollLeft();
+    var scrollY=$canvas.scrollTop();
+
+    var isDown=false;
+    var startX;
+    var startY;
+
+    var cx=150;
+    var cy=150;
+    var begin = "handleMouseDown";
+	var end = "handleMouseUp";
+
+    function draw(){
+		ctx.fillStyle = color_select;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.beginPath();
+        ctx.moveTo(cx,cy);
+        ctx.arc(cx,cy,150,begin,end);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+		
+		
+    }
+
+
+
+//Mouse functions
+    function handleMouseDown(e){
+      e.preventDefault();
+      mouseX=parseInt(e.clientX-offsetX);
+      mouseY=parseInt(e.clientY-offsetY);
+
+      var dx=mouseX-cx;
+      var dy=mouseY-cy;
+      begin=Math.atan2(dy,dx);
+      isDown=true;
+    }
+
+    function handleMouseUp(e){
+      e.preventDefault();
+      isDown=false;
+    }
+
+    function handleMouseOut(e){
+      e.preventDefault();
+      isDown=false;
+    }
+
+    function handleMouseMove(e){
+      if(!isDown){return;}
+      e.preventDefault();
+      mouseX=parseInt(e.clientX-offsetX);
+      mouseY=parseInt(e.clientY-offsetY);
+      var dx=mouseX-cx;
+      var dy=mouseY-cy;
+      end=Math.atan2(dy,dx);
+      draw();
+	  return end //added to check for end point of previous color, 5/28/14
+    }
+
+    $("#canvas").mousedown(function(e){handleMouseDown(e);});
+    $("#canvas").mousemove(function(e){handleMouseMove(e);});
+    $("#canvas").mouseup(function(e){handleMouseUp(e);});
+    $("#canvas").mouseout(function(e){handleMouseOut(e);});
+	
+
+
+}); // end solid plate code;
+
+
+//Liquid Plate
+$(function(){
+    var canvas=document.getElementById("canvas2");
+    var ctx=canvas.getContext("2d");
+    ctx.fillStyle=color_select;
+
+    var $canvas=$("#canvas2");
+    var canvasOffset=$canvas.offset();
+    var offsetX=canvasOffset.left;
+    var offsetY=canvasOffset.top;
+    var scrollX=$canvas.scrollLeft();
+    var scrollY=$canvas.scrollTop();
+
+    var isDown=false;
+    var startX;
+    var startY;
+
+    var cx=75;
+    var cy=75;
+    var begin,end;
+
+
+    function draw(){
+		ctx.fillStyle = color_select;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.beginPath();
+        ctx.moveTo(cx,cy);
+        ctx.arc(cx,cy,75,begin,end);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+    }
+
+
+//Mouse functions
+    function handleMouseDown(e){
+      e.preventDefault();
+      mouseX=parseInt(e.clientX-offsetX);
+      mouseY=parseInt(e.clientY-offsetY);
+
+      // Put your mousedown stuff here
+      var dx=mouseX-cx;
+      var dy=mouseY-cy;
+      begin=Math.atan2(dy,dx);
+      isDown=true;
+    }
+
+    function handleMouseUp(e){
+      e.preventDefault();
+      isDown=false;
+    }
+
+    function handleMouseOut(e){
+      e.preventDefault();
+      isDown=false;
+    }
+
+    function handleMouseMove(e){
+      if(!isDown){return;}
+      e.preventDefault();
+      mouseX=parseInt(e.clientX-offsetX);
+      mouseY=parseInt(e.clientY-offsetY);
+      var dx=mouseX-cx;
+      var dy=mouseY-cy;
+      end=Math.atan2(dy,dx);
+      draw();
+    }
+
+    $("#canvas2").mousedown(function(e){handleMouseDown(e);});
+    $("#canvas2").mousemove(function(e){handleMouseMove(e);});
+    $("#canvas2").mouseup(function(e){handleMouseUp(e);});
+    $("#canvas2").mouseout(function(e){handleMouseOut(e);});
+
+//Multiple wedges would be more complex but possible. (1) Save the beginning/ending angles of the first wedge in an angles array. (2) set the second wedge start angle == the first wedge end angle (3) let the second wedge end angle set only when the second end angle is greater than the second start angle (4) save the second start and end angles in the angles array....repeat for the 3rd,4th,etc wedges
+
+var dairy = [begin, end]
+var fruit = [begin, end]
+var vegetable = [begin, end]
+var protein = [begin, end]
+var grain = [begin, end]
+var empty = [begin, end]
+
+//Sounds about right, but in programming there's often many ways to solve a problem. Instead of an angles array I might create an array of wedge objects. Because you have several properties (start angle, end angle, color, etc) an object makes the most sense to hold that data, but you still want to store the objects themselves in an array.
+
+
+var dairy = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+var fruit = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+var vegetable = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+var protein = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+var grain = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+var empty = {
+	startAngle: begin,
+	endAngle: end,
+	color: blue,
+}
+
+//Look into fill style border for canvas
+
+
+}); // end Liquid plate;
+</script>
+<!--End Interactive Plates-->
+
+</head>
+
+<body>
+
+<header class="sticky">
+	<div class="headcontainer">
+	<div class ="row clearfix">
+		<div class ="column half no padding">
+			                    
+            
+           <a href="home.html"> <img id="logo" src="images/mindfuletextlogo.jpg" alt="Mindfule logo with text"/></a>
+            
+       	</div>
+        
+        <div class="column one-third no padding">
+        	<div id = "toolbar">
+                <a href="trackmeal.html"><img id="trackmealicon" src="images/icons/charticon.png" alt="track meal icon"/></a>
+                <a href="checkmeal.html"><img id="checkmealicon" src="images/icons/teamiconbrown.png" alt="check your teammates' foods out and help them icon"/></a>      
+           		<a href="bookmarks.html"><img id="bookmarkicon" src="images/icons/bookmarkiconbrown.png" alt="bookmarked meals icon"/></a>       
+                <a href="messages.html"><img id="messageicon" src="images/icons/messageiconbrown.png" alt="message icon"/></a> 
+                <a href="find.html"><img id="findicon" src="images/icons/searchiconbrown.png" alt="find icon"/></a>
+               
+                
+           	</div>  
+      	</div>
+        
+        <div class="column one-sixth no padding">
+        		<div class="profile">
+        			<a href="userprofile.html"><img src="images/profilepic1.png" id="profile" alt="profile picture"/><h2>Joe Toscano</h2></a>
+            		<a href="#" alt="about link"><h4>Edit Profile</h4></a>
+        		</div>
+        </div>
+        </div>
+   	</div>
+</header>
+
+
+
+
+<!--drop down menu-->
+<div class="container">
+	<div class="row clearfix">
+		<div class="column three-fourths no padding">
+        	<div class="menu">
+            		<input type="text" name="name" id="search" placeholder="Search Foods"/>
+                    <input type="text" name="name" id="image" placeholder="Image URL"/>
+              			<p class = "button" id="uploadimage"><img src="images/icons/uploadimage.png"/></p>
+              			<p class = "button" id="takenotes"><img src="images/icons/takenotes.png"/></p>
+                    	<p class="button" id="finish"><img src="images/icons/savemeal.png"/></p>
+            </div>
+        </div>
+    </div>
+    
+    
+<!--plates-->    
+    <div class="row clearfix"><!--starts row-->
+		<div class="column half no padding no margin">
+        	<div class="plate">
+        		<canvas id="canvas" width=300px height=300px></canvas>
+                	<p id="solid">Solids</p>   
+                    	<div style="clear:both"></div>
+            	<canvas id="canvas2" width=150px height=150px></canvas>
+                	<p id="liquid">Liquids</p>
+            </div>
+        </div>
+
+        
+
+<!--macro menu-->  
+		<div class="column one-third no padding no margin">
+        	<div class="macromenu">
+            
+        		<div class="blue">
+            		<canvas></canvas>
+            		<p>DAIRY</p>
+            	</div>
+                
+                <div class="red" onClick="selectColor('red')">
+            		<canvas></canvas>
+            		<p>FRUIT</p>
+            	</div>
+                
+            	<div class="green" onClick="selectColor('green')">
+            		<canvas></canvas>
+            		<p>VEG</p>
+            	</div>
+                
+                <div class="purple" onClick="selectColor('#60C')">
+            		<canvas></canvas>
+            		<p>PROTEIN</p>
+            	</div>
+            
+            	<div class="orange" onClick="selectColor('#F60')">
+            		<canvas></canvas>
+            		<p>GRAIN</p>
+            	</div>
+            
+            	<div class="black" onClick="selectColor('black')">
+            		<canvas></canvas>
+            		<p>EMPTY<br />
+					CALORIES</p>
+            	</div>
+            
+        
+        </div> <!--ends macromenu-->
+   	</div> <!--ends column-->
+
+
+	<div class = "column one-third no padding no margin">
+    	<div id="notes">
+    		<input type="text" name="name" id="title" placeholder="Title"/>
+        	<input type="text" name="name" id="notesbox" placeholder="Notes"/>
+        </div>
+    </div>
+</div>
+
+</div> <!--closes container-->
+
+
+</body>
+</html>

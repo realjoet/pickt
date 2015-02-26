@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Colors
+light brown background-color:  #e6a14b;
+light blue background-color:  #7ed1eb;
+dark brown background-color:  #9E6B47;
+icon dark brown: #6d4121
+
+
+
+*/
+
+* {
+	font-family: Eau, Century Gothic, Sans-serif;
+}
+
+
+body {
+	color: white;
+	background-color: #e6a14b;
+	margin: 0;
+	padding:0;
+}
+
+.headcontainer {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+
+/*header */
+header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #7ed1eb;
+}
+
+#logo {
+	width: 120%;
+	float: left;
+	display: inline;
+	margin: 2% 1%;
+	border-radius: 5px;
+}
+
+
+.login {
+	width: 150px;
+	float:right;
+	display: inline;
+	background-color: white;
+	color: #999;
+	padding: 1% 1%;
+	margin: 0 1%;
+	border-radius: 5px
+}
+
+#login a{
+	width: 50px;
+	color:white;
+	text-align: center;
+}
+
+#login a:link, login a:visited{
+	color:white;
+	background-color:#9E6B47;
+	border-radius: 5px;
+	margin: 0 2% 3% 2%;
+	padding: 1%;
+	float: right;
+	display: inline;
+	text-decoration: none;
+}
+
+#login a:hover {
+	color:white;
+	background-color:#6d4121;
+	cursor: pointer;
+}
+	
+
+/*body*/
+
+#welcomeinfo {
+	padding: 5% 0 5% 5%;
+}
+
+.welcomeicon {
+	width:100px;
+	height:100px;
+	float:left;
+	display: inline;
+	margin: 0 2% 4% 0;
+	clear: both;
+}
+
+#welcomeinfo h2 {
+	float:left;
+	display:inline;
+	margin: 8% 5% 0 0;
+}
+
+#signupinfo {
+	padding: 0 0 10% 15%;
+}
+
+.signup {
+	width: 150px;
+	float:left;
+	background-color: white;
+	color: #999;
+	padding: 2%;
+	margin: 2%;
+	border-radius: 5px
+}
+
+#name{
+	width:300px;
+}
+
+#username{
+	width:300px;
+}
+
+#email{
+	width:300px;
+}
+
+#password{
+	width:300px;
+}
+
+#repassword{
+	width:300px;
+}
+
+#month{
+	width:100px;
+	margin: 1% 0 0 3%;
+	float: left;
+	display: inline;
+}
+
+#day{
+	width:50px;
+	margin: 1% 0 0 1%;
+	float: left;
+	display: inline;
+}
+
+#year{
+	width:50px;
+	margin: 1% 0 0 2%;
+	float: left;
+	display: inline;
+}
+
+#goal{
+	width:300px;
+	margin: 0 0 0 3%;
+}
+
+#ready {
+	width: 25%;
+	text-align:center;
+	font-size: 18px;
+	background-color:  #7ed1eb;
+	border-radius: 5px;
+	margin: 1% 2% 2% 65%;
+	padding: 4%;
+	color: white;
+}
+
+
+#ready a:link, #ready a:visited{
+	color:white;
+	background-color:#7ed1eb;
+	text-decoration: none;
+}
+
+#ready a:hover {
+	color:white;
+	background-color:#6CF;
+	cursor: pointer;
+}
+
+
+/*footer*/
+footer {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #7ed1eb;
+}
+
+footer p {
+	margin: 2% 2%;
+	padding: 0;
+	float: right;
+	display:inline;
+}
+
+
+footer a:link, footer a:visited {
+	color: white;
+	margin: 2% 0 2% 2%;
+	text-decoration:none;
+	transition: all .5s 0;
+	float: left;
+	display: inline;
+}
+
+footer a:hover {
+	text-decoration:underline;
+}
+
+
+/*Grid*/
+
+/*Columns*/
+.column {
+	float: left;
+}
+
+.column:first-child {
+	margin-left: 0;
+}
+
+.column.full {
+	width: 100%;
+}
+
+.column.three-fourths {
+	width: 78%;
+	margin: 1% 0 0 1%;
+	padding: 0;
+}
+
+.column.two-thirds {
+	width: 65%;
+}
+
+.column.half {
+	width: 47.5%;
+}
+
+.column.one-third {
+	width: 30%;
+}
+
+.column.one-fourth {
+	width: 21%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.column.three-three-fourths {
+	width: 24%;
+	margin: 1% .5% 0 1.5%;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+/* Create Rows */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+	max-height: 50%;
+}
+
+.clearfix:after {
+	clear: both;
+}
+

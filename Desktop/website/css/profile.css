@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Colors
+light brown background-color:  #e6a14b;
+light blue background-color:  #7ed1eb;
+dark brown background-color:  #9E6B47;
+
+
+
+*/
+
+* {
+	font-family: Eau, Century Gothic, Sans-serif;
+}
+
+
+body {
+	color: #999;
+	background-color: #e6a14b;
+	margin: 0;
+	padding: 0;
+}
+
+.headcontainer {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/*Top*/
+
+
+header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #7ed1eb;
+}
+
+.sticky {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+
+#logo {
+	width: 42%;
+	float: left;
+	display: inline;
+	margin: 2% 2%;
+	padding: 0;
+	border-radius: 5px;
+}
+
+#toolbar {
+	width:100%;
+	float:right;
+	display: inline;
+	margin: 0;
+	padding: 0 15% .75% 5%;
+	position: relative;
+	left: 255px;
+	background-color: #9E6B47;
+	border-radius: 60px;
+
+}
+
+#trackmealicon {
+	float: left;
+	display: inline;
+	width: 8%;
+	margin: 7% 4% 6% 6%;
+}
+
+
+
+
+#checkmealicon {
+	float: left;
+	display: inline;
+	width: 9%;
+	margin: 6% 4% 5% 4%;
+}
+
+
+
+#bookmarkicon {
+	float: left;
+	display: inline;
+	width: 8%;
+	margin: 6.5% 4% 6% 4%;
+}
+
+#messageicon {
+	float: left;
+	display: inline;
+	width: 8%;
+	margin: 6% 4% 6% 4%;
+}
+
+#findicon {
+	float: left;
+	display: inline;
+	width: 7%;
+	margin: 8% 4% 6% 3%;
+	position: relative;
+	bottom: 5px;
+}
+
+.profile {
+	width: 100%;
+	float: right;
+	display: inline;
+	margin: 0;
+	padding: 0 5% 0 0;
+	position: relative;
+	left: 155px;
+	background-color: #9E6B47;
+}
+
+.profile img {
+	width: 25%;
+	float: left;
+	border-radius: 5px;
+	margin: 7% 2% 9% 5%;
+}
+
+.profile a h2 {
+	width: 45%;
+	font-size: 14px;
+	float: left;
+	display: inline;
+	margin: 11% 2% 0 5%;
+	padding: 0 0 1% 0;
+	color: white;
+	transition: all .25s 0;
+}
+
+
+.profile a h2:hover {
+	text-decoration: underline;
+}
+
+.profile a h4 {
+	float: left;
+	display: inline;
+	margin: 2% 5% 0 5%;
+	padding: 0;
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+	transition: all .25s 0;
+}
+
+.profile a h4:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/*profile info*/
+#profileinfo {
+	width: 100%;
+	background-color:white;
+	border-radius: 5px;
+	margin: 8.5% 0 0 0;
+	float: left;
+	display:inline;
+}
+
+#profileinfo a:link, #profileinfo a:visited{
+	text-decoration: none;
+	color: black;
+	transition: all .5 0;
+	padding: 0;
+	margin: 0;
+}
+
+#profileinfo a:hover{
+	text-decoration: underline;
+	
+}
+
+#userpic {
+	width: 100%;
+	padding: 5% 5% 3% 5%;
+	margin: 0;
+	float:left;
+	display:inline;
+	border-radius:5px;
+}
+
+#userpic a{
+	padding: 0;
+	margin: 0;
+}
+
+#userpic h2{
+	padding: 0;
+	margin: 0 0 2% 0;
+}
+
+#userpic h4{
+	padding: 0;
+	margin: 0;
+}
+
+#profilepic {
+	width:200px;
+	height:200px;
+	border-radius: 5px;
+	padding: 0;
+	margin:0;
+}
+
+
+#userinfo {
+	width: 100%;
+	float:left;
+	display:inline;
+	color: black;
+	margin: 0 0 0 2%;
+	padding: 0;
+}
+
+#userinfo p {
+	margin: 0;
+	padding: 0;
+}
+
+#userinfo h1 {
+	display: inline;
+	margin: 1% 0 0 0;
+	padding: 0;
+	border-radius: 2px;
+	font-size: 80px;
+}
+
+#userinfo h4 {
+	width: 100%;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+#userinfo a:link, #meals a:visited{
+	text-decoration: none;
+	color: black;
+	transition: all .5 0;
+	padding: 0 auto;
+	margin: 0;
+}
+
+#userinfo a:hover{
+	color: #7ed1eb;
+}
+
+
+#meals {
+	width: 25%;
+	float: left;
+	display: inline;
+	margin: 4% 5% 0 0;
+	padding: 0;
+}
+
+#teammates {
+	width: 25%;
+	float: left;
+	display: inline;
+	margin: 4% 0 0 5%;
+	padding: 0;
+}
+
+
+#teams {
+	width:25%;
+	float: left;
+	display: inline;
+	margin: 4% 0 0 0;
+	padding: 0;
+}
+
+
+#goal {
+	font-size: 18px;
+	width: 100%;
+	float:left;
+	display:inline;
+	color: black;
+	margin: 5% 0 0 0;
+	padding: 0;
+}
+
+#goal h4{
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+#goal p{
+	margin: 0;
+	padding: 0;
+}
+
+#healthrating {
+	width: 100%;
+	float:left;;
+	display:inline;
+	margin:0 0 -50% 15%;
+	position: relative;
+	bottom: 100px;
+	left: 90px;
+	color: black;
+}
+
+#healthrating h2 {
+	position:relative;
+	right: 70px;
+}
+
+#solids {
+	margin:0;
+	padding:0;
+	width: 200px;
+	height: 200px;
+	border: solid black 1px;
+	border-radius: 500px;
+}
+
+#liquids {
+	margin:0;
+	padding:0;
+	width: 100px;
+	height: 100px;
+	border: solid black 1px;
+	border-radius: 500px;
+	position: relative;
+	left: 150px;
+	bottom: 50px;
+
+}
+
+
+
+	
+
+
+
+/*profile images*/
+
+.meals {
+	float: left;
+	display: inline;
+	width: 100%;
+	margin: 0 .5%;
+	padding: 0;
+}
+
+#mealcol1, #mealcol2, #mealcol3, #mealcol4, #mealcol5, #mealcol6 {
+	float: left;
+	display: inline;
+	margin: 0 1% 0 0;
+}
+
+
+.food {
+	width:100%;
+	border: solid white 4px;
+	border-radius: 5px;
+	margin: 2% 0;
+	padding: 0;
+}
+
+
+
+
+/*Columns*/
+.column {
+	float: left;
+}
+
+.column:first-child {
+	margin-left: 0;
+}
+
+.column.full {
+	width: 100%;
+}
+
+.column.three-fourths {
+	width: 78%;
+}
+
+.column.two-thirds {
+	width: 65%;
+}
+
+.column.half {
+	width: 40%;
+}
+
+.column.one-third {
+	width: 30%;
+	margin: 0 0 0 2%
+}
+
+.column.one-fourth {
+	width: 21%;
+}
+
+.column.one-sixth {
+	width: 16%;
+	margin: 0;
+	padding: 0;
+}
+
+.column.one-tenth {
+	width: 15.5%;
+	
+}
+
+.column.three-three-fourths {
+	width: 24%;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+/* Create Rows */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+	max-height: 50%;
+}
+
+.clearfix:after {
+	clear: both;
+}
